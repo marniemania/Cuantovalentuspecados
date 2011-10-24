@@ -120,41 +120,73 @@ He dicho a alguien que sea bueno en la cama sinque era la verdad  <br /><br>
 <input onClick="showDiv('off36')" type="checkbox" name="id[36]" value="36" /> 
 A veces aparco en el parking de disminuidos <br />
 <div id="off36" style="display:none;"><input onClick="showDiv('off37')" type="checkbox" name="id[37]" value="37" />  ... und wurde dabei sogar schon abgeschleppt </div>
-<input onClick="showDiv('off38')" type="checkbox" name="id[38]" value="38" /> Ich fahre machmal schwarz mit Bus oder Bahn <br />
+<input onClick="showDiv('off38')" type="checkbox" name="id[38]" value="38" /> 
+A veces voy en el autobus sin pagar<br />
 
 <div id="off38" style="display:none;"><input onClick="showDiv('off39')" type="checkbox" name="id[39]" value="39" />  ... und wurde dabei schonmal erwischt  </div><br>
-<input onClick="showDiv('off40')" type="checkbox" name="id[40]" value="40" /> Ich habe manchmal die Schule geschw&auml;nzt <br />
+<input onClick="showDiv('off40')" type="checkbox" name="id[40]" value="40" />
+He saltado clases
+<br />
 <div id="off40" style="display:none;"><input onClick="showDiv('off41')" type="checkbox" name="id[41]" value="41" />  ... und dabei noch den Entschuldigungszettel gef&auml;lscht </div>
-<input onClick="showDiv('off42')" type="checkbox" name="id[42]" value="42" /> Ich habe absichtlich die Hausaufgaben nicht gemacht <br />
-<input onClick="showDiv('off43')" type="checkbox" name="id[43]" value="43" /> Ich habe schlechte Noten vor meinen Eltern verheimlicht <br />
+<p>
+  <input onClick="showDiv('off42')" type="checkbox" name="id[42]" value="42" /> 
+  A veces ni hice mis deberes<br />
+  <input onClick="showDiv('off43')" type="checkbox" name="id[43]" value="43" /> 
+  He escondido notas malas de mis padres<br />
+  
+  <input onClick="showDiv('off44')" type="checkbox" name="id[44]" value="44" />
+  He suspendido una clase
+  <br /><br>
+  <input onClick="showDiv('off45')" type="checkbox" name="id[45]" value="45" />
+  Mi pelo es tintado
+</p>
+<p>
+  <input onClick="showDiv('off46')" type="checkbox" name="id[46]" value="46" /> 
+  Mis tetas son falsas<br />
+  <input onClick="showDiv('off47')" type="checkbox" name="id[47]" value="47" /> 
+  Miento sobre mi peso<br />
+  <input onClick="showDiv('off48')" type="checkbox" name="id[48]" value="48" /> 
+  He grabado un video sucio/porno<br />
+  
+  <input onClick="showDiv('off49')" type="checkbox" name="id[49]" value="49" /> 
+  He tenido ciber-sexo o sexo al telefono<br /><br>
+  <br>
+</p>
+<h3>Pecados pequenos en rebaja</h3><input onClick="showDiv('off51')" type="checkbox" name="id[51]" value="51" /> 
+Tiro pedos y doy la culpa a otra gente <br />
+<input onClick="showDiv('off52')" type="checkbox" name="id[52]" value="52" /> 
+Miento sobre mi genero en el chat <br />
+<input onClick="showDiv('off53')" type="checkbox" name="id[53]" value="53" /> 
+He robado frutas <br />
 
-<input onClick="showDiv('off44')" type="checkbox" name="id[44]" value="44" /> Ich bin sitzen geblieben <br /><br>
-<input onClick="showDiv('off45')" type="checkbox" name="id[45]" value="45" /> Meine Haare sind gef&auml;rbt <br />
-<input onClick="showDiv('off46')" type="checkbox" name="id[46]" value="46" /> Meine Br&uuml;ste sind vergr&ouml;&szlig;ert <br />
-<input onClick="showDiv('off47')" type="checkbox" name="id[47]" value="47" /> Wenn ich mein Gewicht angebe, stimmt das nicht <br />
-<input onClick="showDiv('off48')" type="checkbox" name="id[48]" value="48" /> Ich habe schonmal ein schmutziges Home-Video gedreht <br />
-
-<input onClick="showDiv('off49')" type="checkbox" name="id[49]" value="49" /> Ich hatte schonmal Cybersex / Telefonsex mit einem Fremden  <br /><br>
-<br><h3>Kleine S&uuml;nden zu Discountpreisen</h3><input onClick="showDiv('off51')" type="checkbox" name="id[51]" value="51" /> Ich mache einen Pups und schiebe die Schuld f&uuml;r den Mief auf jemand anderen <br />
-<input onClick="showDiv('off52')" type="checkbox" name="id[52]" value="52" /> Ich t&auml;usche manchmal in einem Chat &uuml;ber mein Geschlecht <br />
-<input onClick="showDiv('off53')" type="checkbox" name="id[53]" value="53" /> Ich habe schonmal Fr&uuml;chte geklaut <br />
-
-<input onClick="showDiv('off54')" type="checkbox" name="id[54]" value="54" /> Ich habe heute schon gelogen  <br /><br>
-<input onClick="showDiv('off55')" type="checkbox" name="id[55]" value="55" /> Ich habe heute schon masturbiert <br />
+<input onClick="showDiv('off54')" type="checkbox" name="id[54]" value="54" /> 
+Hoy ya he mentido  <br /><br>
+<input onClick="showDiv('off55')" type="checkbox" name="id[55]" value="55" /> 
+Hoy ya he masturbado  <br />
 <div id="off55" style="display:none;"><input onClick="showDiv('off56')" type="checkbox" name="id[56]" value="56" />  ... und mir hinterher nicht die H&auml;nde gewaschen </div>
-<input onClick="showDiv('off57')" type="checkbox" name="id[57]" value="57" /> Ich benutze manchmal Sexspielzeug <br />
-<input onClick="showDiv('off58')" type="checkbox" name="id[58]" value="58" /> Ich mag Analverkehr <br />
-<input onClick="showDiv('off59')" type="checkbox" name="id[59]" value="59" /> Ich mag Oralverkehr <br /><br>
+<input onClick="showDiv('off57')" type="checkbox" name="id[57]" value="57" /> 
+A veces uso juguetes de sexo <br />
+<input onClick="showDiv('off58')" type="checkbox" name="id[58]" value="58" /> 
+Me gusta sexo anal <br />
+<input onClick="showDiv('off59')" type="checkbox" name="id[59]" value="59" /> 
+Me gusta sexo oral <br /><br>
 
-<input onClick="showDiv('off60')" type="checkbox" name="id[60]" value="60" /> Ich spiele gerne Flaschendrehen <br />
-<input onClick="showDiv('off61')" type="checkbox" name="id[61]" value="61" /> Ich pinkle manchmal ins Schwimmbecken <br />
+<input onClick="showDiv('off60')" type="checkbox" name="id[60]" value="60" /> 
+Me gusta jugar gira-botellas <br />
+<input onClick="showDiv('off61')" type="checkbox" name="id[61]" value="61" /> 
+Me meo en la piscina <br />
 <div id="off61" style="display:none;"><input onClick="showDiv('off62')" type="checkbox" name="id[62]" value="62" />  ... w&uuml;rde das aber niemals zugeben </div><br>
-<input onClick="showDiv('off63')" type="checkbox" name="id[63]" value="63" /> Ich mag Sex in einem &ouml;ffentlichen Schwimmbad <br />
-<input onClick="showDiv('off64')" type="checkbox" name="id[64]" value="64" /> Ich hatte schonmal Sex im Wald oder am Strand <br />
+<input onClick="showDiv('off63')" type="checkbox" name="id[63]" value="63" /> 
+Me gusta sexo en piscinas publicas <br />
+<input onClick="showDiv('off64')" type="checkbox" name="id[64]" value="64" /> 
+He tenido sexo en el bosque o a la playa <br />
 
-<input onClick="showDiv('off65')" type="checkbox" name="id[65]" value="65" /> Ich habe jemanden des gleichen Geschlechts gek&uuml;sst <br />
-<input onClick="showDiv('off66')" type="checkbox" name="id[66]" value="66" /> Ich habe meinen Lehrer(in) gek&uuml;sst <br />
-<input onClick="showDiv('off67')" type="checkbox" name="id[67]" value="67" /> Ich habe mit jemandem des gleichen Geschlechts geschlafen <br />
+<input onClick="showDiv('off65')" type="checkbox" name="id[65]" value="65" /> 
+He besado alguien con el mismo genero <br />
+<input onClick="showDiv('off66')" type="checkbox" name="id[66]" value="66" /> 
+He besado mi profesor/a <br />
+<input onClick="showDiv('off67')" type="checkbox" name="id[67]" value="67" /> 
+Me he acostado con alguien del mismo genero <br />
 <input type="hidden" name="cnt" value="0" /><br>
 <center><!--Banner goes here--> <script type="text/javascript"><!--
 google_ad_client = "pub-8122320310520638";
@@ -168,14 +200,17 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>  <!--End of Banner--></center>
 
-<h3>Und dann noch einige Pers&ouml;nliche daten...</h3>
-Wie ist dein Name (Nickname reicht)?<br>
+<h3>Y algunos datos mas personales...</h3>
+Como es tu nombre (sobrenombre o usuario es suficiente)?<br>
 <input name="name" size="40" maxlength="60" value="" />
 <br><br>
-Was f&uuml;r ein Geschlecht hast du?<br>
-<input type="radio" name="sex" value="m" />M&auml;nnlich&nbsp;&nbsp;
-<input type="radio" name="sex" value="w" />Weiblich&nbsp;&nbsp; <br><br>
-<input type="submit" value="Auswerten" /> <font color="#FF0000">&nbsp;* Vergiss Name und Geschlecht nicht!</font>
+De que genero eres?<br>
+<input type="radio" name="sex" value="m" />
+masculino&nbsp;&nbsp;
+<input type="radio" name="sex" value="w" />
+feminino&nbsp;&nbsp; <br><br>
+<input type="submit" value="Auswerten" /> 
+<font color="#FF0000">&nbsp;* No olvides nombre y genero</font>
 
 </form>  <br><br>
     </td>
