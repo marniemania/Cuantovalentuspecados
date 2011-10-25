@@ -209,7 +209,7 @@ De que genero eres?<br>
 masculino&nbsp;&nbsp;
 <input type="radio" name="sex" value="w" />
 feminino&nbsp;&nbsp; <br><br>
-<input type="submit" value="Auswerten" /> 
+<input type="submit" value="evaluar" /> 
 <font color="#FF0000">&nbsp;* No olvides nombre y genero</font>
 
 </form>  <br><br>
