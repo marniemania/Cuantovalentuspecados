@@ -1,0 +1,9 @@
+.submit {
+	background: #FFFFFF; 
+	border: 1px; 
+	border-color: #FFFFFF; 
+	font-family: Arial; 
+	font-size: 30px; 
+	color: #f00; 
+	cursor: pointer;
+}
