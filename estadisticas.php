@@ -2,34 +2,63 @@
 
 	include_once("pecados.php");
 
-	if (isset($_POST["sex"])) {
-		$sex = $_POST["sex"];
-		$questions = $_POST["id"];
-	
-		foreach ($questions as $id => $value) {
-		}
+	function get_values($file) {
+		return file($file);
 	}
 
-	function get_values($file) {
-		$results = array();
-		$contents = file_get_contents($file);
-		for ($pos = 0; $pos < strlen($contents); $pos++) {
-			if ($pos %2 == 0)
-				$results []= substr($contents, $pos, 1);
+	function cmp($a, $b) {
+		if (1.0 * $a > 1.0 * $b)
+			return -1;
+		return 1;
+	}
+
+	function put_values($file, $values) {
+		$hnd = fopen($file, 'w');
+		foreach ($values as $value) {
+			$value = trim($value);
+			fwrite($hnd, "$value\n");
 		}
-		return $results;
+		fclose($hnd);
 	}
 
 	$hombres = get_values("pecadosm.txt");
 	$mujeres = get_values("pecadosf.txt");
 
-	echo "<table border=1>";
-	echo "<tr><th>Pecado</th><th>Hombres</th><th>Mujeres</th></tr>";
+	if (isset($_POST["sex"])) {
+		$sex = $_POST["sex"];
+		$questions = $_POST["id"];
+	
+		foreach ($questions as $id => $value) {
+			if ($sex == "m")
+				$hombres[$id] = $hombres[$id] + 1;
+			else
+				$mujeres[$id] = $mujeres[$id] + 1;
+		}
+
+		put_values("pecadosm.txt", $hombres);
+		put_values("pecadosf.txt", $mujeres);
+	}
+
+	uasort($hombres, "cmp");
+	uasort($mujeres, "cmp");
+
+	$lines = array();
 	foreach ($hombres as $id => $count) {
+		$lines []= array("{$pecados[$id]} [ $count]");
+	}
+	$cont = 0;
+	foreach ($mujeres as $id => $count) {
+		$lines [$cont][1]= "{$pecados[$id]} [ $count]";
+		$cont = $cont + 1;
+	}
+
+	echo "<table border=1>";
+	echo "<tr><th>Hombres</th><th>Mujeres</th></tr>";
+	foreach ($lines as $line) {
 		echo "<tr>";
-		echo "<td>"; echo $pecados[$id]; echo "</td>";
-		echo "<td>"; echo $count; echo "</td>";
-		echo "<td>"; echo $mujeres[$id]; echo "</td>";
+		foreach ($line as $word) {
+			echo "<td>"; echo $word; echo "</td>";
+		}
 		echo "</tr>";
 	}
 	echo "</table>";
