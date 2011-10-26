@@ -7,7 +7,7 @@
 
 <body>
 
-<form name="frm" action="" method="post">
+<form name="frm" action=procesa.php method="post">
 
 <h3>Pecados grandes a precios regulares</h3>
 
@@ -129,7 +129,7 @@ Como es tu nombre (sobrenombre o usuario es suficiente)?<br>
 <input name="name" size="40" maxlength="60" value="" />
 <br><br>
 De que genero eres?<br>
-<input type="radio" name="sex" value="m" />
+<input type="radio" name="sex" value="m" checked />
 masculino&nbsp;&nbsp;
 <input type="radio" name="sex" value="w" />
 feminino&nbsp;&nbsp; <br><br>
