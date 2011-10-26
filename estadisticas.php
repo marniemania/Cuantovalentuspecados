@@ -42,13 +42,24 @@
 	uasort($hombres, "cmp");
 	uasort($mujeres, "cmp");
 
+	$sum_h = 0;
+	foreach ($hombres as $hombre) {
+		$sum_h = trim($hombre) + $sum_h;
+	}
+	$sum_f = 0;
+	foreach ($mujeres as $mujer) {
+		$sum_f = trim($mujer) + $sum_f;
+	}
+
 	$lines = array();
 	foreach ($hombres as $id => $count) {
-		$lines []= array("{$pecados[$id]} [ $count]");
+		$pctje = round(10000 * trim($count) / $sum_h) / 100;
+		$lines []= array("{$pecados[$id]} [$pctje%]");
 	}
 	$cont = 0;
 	foreach ($mujeres as $id => $count) {
-		$lines [$cont][1]= "{$pecados[$id]} [ $count]";
+		$pctje = round(10000 * trim($count) / $sum_f) / 100;
+		$lines [$cont][1]= "{$pecados[$id]} [$pctje%]";
 		$cont = $cont + 1;
 	}
 
