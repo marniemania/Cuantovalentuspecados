@@ -17,6 +17,7 @@
 		$text = $pecado->text();
 		echo "<input type=checkbox name='id[$id]' value='$id' />$text<br />";
 	}
+
 ?>
 <h3>Y algunos datos mas personales...</h3>
 De qu&eacute; g&eacute;nero eres?<br>

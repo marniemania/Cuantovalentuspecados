@@ -1,6 +1,6 @@
 <?php
 
-include_once("pecados.php");
+include_once("src/Pecado.php");
 
 	function cmp($a, $b) {
 		if (1.0 * $a > 1.0 * $b)
@@ -39,6 +39,8 @@ class Helper {
 		$hombres,
 		$mujeres
 	) {
+		$pecados = Pecado::all();
+
 		uasort($hombres, "cmp");
 		uasort($mujeres, "cmp");
 
@@ -54,12 +56,14 @@ class Helper {
 		$lines = array();
 		foreach ($hombres as $id => $count) {
 			$pctje = round(10000 * trim($count) / $sum_h) / 100;
-			$lines []= array("{$pecados[$id]} [$pctje%]");
+			$text = Pecado::withId($id)->text();
+			$lines []= array("$text [$pctje%]");
 		}
 		$cont = 0;
 		foreach ($mujeres as $id => $count) {
 			$pctje = round(10000 * trim($count) / $sum_f) / 100;
-			$lines [$cont][1]= "{$pecados[$id]} [$pctje%]";
+			$text = Pecado::withId($id)->text();
+			$lines[$cont][1] = "$text [$pctje%]";
 			$cont = $cont + 1;
 		}
 
