@@ -11,8 +11,7 @@
 </tr>
 
 <?php
-	list($hombres, $mujeres) = Helper::get_values();
-	foreach (Helper::get_statistics($hombres, $mujeres) as $line) {
+	foreach (Helper::get_statistics() as $line) {
 		echo "<tr>";
 		foreach ($line as $word) {
 			echo "<td>"; echo $word; echo "</td>";

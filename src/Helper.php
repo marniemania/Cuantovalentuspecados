@@ -49,9 +49,9 @@ class Helper {
 	}
 
 	public static function get_statistics(
-		$hombres,
-		$mujeres
 	) {
+		list($hombres, $mujeres) = Helper::get_values();
+
 		$pecados = Pecado::all();
 
 		uasort($hombres, "cmp_strnums");
