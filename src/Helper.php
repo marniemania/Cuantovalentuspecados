@@ -84,9 +84,8 @@ class Helper {
 	}
 
 	public static function update_stats(
-		$hombres,
-		$mujeres
 	) {
+		list($hombres, $mujeres) = Helper::get_values();
 		if (isset($_POST["sex"])) {
 			$sex = $_POST["sex"];
 			$questions = $_POST["id"];

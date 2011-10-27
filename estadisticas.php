@@ -4,7 +4,7 @@
 
 	list($hombres, $mujeres) = Helper::get_values();
 
-	Helper::update_stats($hombres, $mujeres);
+	Helper::update_stats();
 
 	echo "<table border=1>";
 	echo "<tr><th>Hombres</th><th>Mujeres</th></tr>";
