@@ -10,10 +10,12 @@
 <form name="frm" action=estadisticas.php method="post">
 
 <?php
-	include_once("pecados.php");
+	include_once("src/Pecado.php");
 
-	foreach ($pecados as $id => $pecado) {
-		echo "<input type=checkbox name='id[$id]' value='$id' />$pecado<br />";
+	foreach (Pecado::all() as $pecado) {
+		$id = $pecado->id();
+		$text = $pecado->text();
+		echo "<input type=checkbox name='id[$id]' value='$id' />$text<br />";
 	}
 ?>
 <h3>Y algunos datos mas personales...</h3>
