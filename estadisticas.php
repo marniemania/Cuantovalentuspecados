@@ -1,13 +1,17 @@
 <?php
-
 	include_once("src/Helper.php");
 
-	list($hombres, $mujeres) = Helper::get_values();
-
 	Helper::update_stats();
+?>
 
-	echo "<table border=1>";
-	echo "<tr><th>Hombres</th><th>Mujeres</th></tr>";
+<table border=1>
+<tr>
+	<th>Hombres</th>
+	<th>Mujeres</th>
+</tr>
+
+<?php
+	list($hombres, $mujeres) = Helper::get_values();
 	foreach (Helper::get_statistics($hombres, $mujeres) as $line) {
 		echo "<tr>";
 		foreach ($line as $word) {
