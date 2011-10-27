@@ -10,13 +10,32 @@ function cmp_strnums($a, $b) {
 
 class Helper {
 
+	private static function check_stats(
+	) {
+		if (!file_exists("stats")) {
+			mkdir("stats");
+		}
+		$num = count(Pecado::all());
+		$zeros = array();
+		for ($c = 0; $c <$num; $c = $c + 1)
+			$zeros[$c] = 0;
+		if (!file_exists("stats/pecadosm.txt")) {
+			self::store("stats/pecadosm.txt", $zeros);
+		}
+		if (!file_exists("stats/pecadosf.txt")) {
+			self::store("stats/pecadosf.txt", $zeros);
+		}
+	}
+
 	private static function hombres(
 	) {
+		self::check_stats();
 		return "stats/pecadosm.txt";
 	}
 
 	private static function mujeres(
 	) {
+		self::check_stats();
 		return "stats/pecadosf.txt";
 	}
 
