@@ -28,7 +28,7 @@ class Helper {
 		);
 	}
 
-	public static function store(
+	private static function store(
 		$file, 
 		$values
 	) {
@@ -81,6 +81,25 @@ class Helper {
 		}
 
 		return $lines;
+	}
+
+	public static function update_stats(
+		$hombres,
+		$mujeres
+	) {
+		if (isset($_POST["sex"])) {
+			$sex = $_POST["sex"];
+			$questions = $_POST["id"];
+		
+			foreach ($questions as $id => $value) {
+				if ($sex == "m")
+					$hombres[$id] = $hombres[$id] + 1;
+				else
+					$mujeres[$id] = $mujeres[$id] + 1;
+			}
+
+			Helper::put_values($hombres, $mujeres);
+		}
 	}
 
 }
