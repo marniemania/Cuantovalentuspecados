@@ -2,13 +2,36 @@
 
 include_once("src/Pecado.php");
 
-	function cmp($a, $b) {
-		if (1.0 * $a > 1.0 * $b)
-			return -1;
-		return 1;
+function cmp_strnums($a, $b) {
+	if (1.0 * $a > 1.0 * $b)
+		return -1;
+	return 1;
+}
+
+class Helper {
+
+	private static function hombres(
+	) {
+		return "stats/pecadosm.txt";
 	}
 
-	function put_values($file, $values) {
+	private static function mujeres(
+	) {
+		return "stats/pecadosf.txt";
+	}
+
+	public static function get_values(
+	) {
+		return array(
+			file(self::hombres()),
+			file(self::mujeres())
+		);
+	}
+
+	public static function store(
+		$file, 
+		$values
+	) {
 		$hnd = fopen($file, 'w');
 		foreach ($values as $value) {
 			$value = trim($value);
@@ -17,22 +40,12 @@ include_once("src/Pecado.php");
 		fclose($hnd);
 	}
 
-class Helper {
-
-	public static function get_values(
-	) {
-		return array(
-			file("pecadosm.txt"),
-			file("pecadosf.txt")
-		);
-	}
-
 	public static function put_values(
 		$hombres,
 		$mujeres
 	) {
-		put_values("pecadosm.txt", $hombres);
-		put_values("pecadosf.txt", $mujeres);
+		self::store(self::hombres(), $hombres);
+		self::store(self::mujeres(), $mujeres);
 	}
 
 	public static function get_statistics(
@@ -41,8 +54,8 @@ class Helper {
 	) {
 		$pecados = Pecado::all();
 
-		uasort($hombres, "cmp");
-		uasort($mujeres, "cmp");
+		uasort($hombres, "cmp_strnums");
+		uasort($mujeres, "cmp_strnums");
 
 		$sum_h = 0;
 		foreach ($hombres as $hombre) {

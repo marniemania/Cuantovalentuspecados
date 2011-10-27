@@ -5,7 +5,7 @@ class Pecado {
 	var $text;
 	var $id;
 
-	private static $instance = 1;
+	private static $instance = 0;
 	private static $instances = array();
 
 	private function __construct(
